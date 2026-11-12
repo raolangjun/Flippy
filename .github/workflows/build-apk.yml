@@ -20,7 +20,7 @@ jobs:
         uses: android-actions/setup-android@v4
 
       - name: Generate Gradle Wrapper
-        run: gradle wrapper --gradle-version 8.7
+        run: gradle wrapper --gradle-version 8.7 --gradle-distribution-sha256-sum 544c35d6bd849ae8a5ed0bcea39ba677dc40f49df7d1835561582da2009b961d
 
       - name: Grant execute permission for gradlew
         run: chmod +x gradlew
